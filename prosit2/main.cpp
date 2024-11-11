@@ -1,10 +1,11 @@
-#include <cassert>
-#include <iostream>
+/*#include <cassert>
+#include <iostream>//entrée/sortie 
+#include <fstream>//fichier
 #include <math.h>
-/*
+
 #include <encrypt.h>
 #include <decrypt.h>
-#include <fichier.h>*/
+#include <fichier.h>
 int action;
 int code;
 
@@ -51,4 +52,29 @@ int main()
     }
     
     
+}*/
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+ 
+using namespace std;
+ 
+int main()
+{
+        ifstream fichier("test.txt", ios::in);  // on ouvre en lecture
+ 
+        if(fichier)  // si l'ouverture a fonctionné
+        {
+                string contenu;  // déclaration d'une chaîne qui contiendra la ligne lue
+                getline(fichier, contenu);  // on met dans "contenu" la ligne
+                cout << contenu;  // on affiche la ligne
+ 
+                fichier.close();
+        }
+        else
+                cerr << "Impossible d'ouvrir le fichier !" << endl;
+ 
+        return 0;
 }
