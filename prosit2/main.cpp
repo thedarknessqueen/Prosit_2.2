@@ -80,13 +80,25 @@ int main()
 }
 */
 #include "crypt.h"
-
+#include <iostream>
+using namespace std;
 
 int main() {
     string texte = "Bolivie";
     int decalage = 3;
-    ctype msgcrypt(texte);
+    crypte msgcrypt(texte);
     string texteChiffre = msgcrypt.crypte_Cesar(texte,decalage);
     cout << texteChiffre << endl;
 
+
+    return 0;
+
 }
+
+
+
+
+//crypte::crypte(string s){
+  //  message = s;
+
+//}
