@@ -1,5 +1,3 @@
-//modif du 12/11 11h51
-
 //
 // Created by Admin on 12/11/2024.
 //
@@ -11,14 +9,14 @@
 
 
 class crypte {
-public:
-    std::string crypte_Cesar();
-    std::string crypte_Xor();
-    std::string crypte_Mix();
-    crypte (std::string m);
+    public:
+        std::string crypte_Cesar(std::string texte, int decalage);
+        std::string crypte_Xor();
+        std::string crypte_Mix();
+        crypte (std::string m);
 
-private:
-    std::string message;
+    private:
+        std::string message;
 
 
 
