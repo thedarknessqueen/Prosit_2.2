@@ -1,15 +1,13 @@
-// fonction d'encryption
 #include "crypt.h"
 #include <iostream>
 using namespace std;
 
 crypte::crypte(string s){
     message = s;
-
 }
 
 string crypte::crypte_Cesar(string texte,int decalage){
-    string resultat = "";
+    string texteChiffre = "";
 
     for(char c : texte){
 
