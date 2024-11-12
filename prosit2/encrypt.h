@@ -1,2 +1,26 @@
 //modif du 12/11 11h51
 
+//
+// Created by Admin on 12/11/2024.
+//
+
+#ifndef CRYPT_H
+#define CRYPT_H
+#include<iostream>
+#include<string>
+
+
+class crypte {
+public:
+    std::string crypte_Cesar();
+    std::string crypte_Xor();
+    std::string crypte_Mix();
+    crypte (std::string m);
+
+private:
+    std::string message;
+
+
+
+};
+#endif //CRYPT_H
