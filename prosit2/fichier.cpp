@@ -32,7 +32,7 @@ Fichier::ecriture(){
 
     if(monFlux)    
     {
-        monFlux << code_final << endl;
+        monFlux << texteChiffre << endl;
     }
     else
     {
