@@ -1,1 +1,1 @@
-// fonction d'encryption tst pour corentin
+// fonction d'encryption
